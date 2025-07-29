@@ -1,0 +1,30 @@
+// Sets
+// add("value")-to add value to the set.
+// remove("value")-to remove elements from set.
+// size()-to find size of set.
+// contains("value")-it will find the element is there in the set or not.
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Set<String> fruits=new HashSet<>();
+        fruits.add("Mango");
+        fruits.add("Apple");
+        System.out.println(fruits);
+        fruits.add("Orange");
+        System.out.println(fruits);
+        System.out.println(fruits.size());
+        fruits.remove("Orange");
+        System.out.println(fruits);
+        System.out.println(fruits.contains("Apple"));
+        System.out.println(fruits.contains("Orange"));
+    }
+}
+
+// Output:
+// [Apple, Mango]
+// [Apple, Mango, Orange]
+// 3
+// [Apple, Mango]
+// true
+// false
