@@ -1,13 +1,43 @@
-// Sets
+// Sets - It will not support index value it will only suport value in set because it dont have anu order and not sorted 
 // add("value")-to add value to the set.
 // remove("value")-to remove elements from set.
 // size()-to find size of set.
 // contains("value")-it will find the element is there in the set or not.
 
+// HashSet - in this there will be no order it will be jumbled
+
 import java.util.*;
 class Main{
     public static void main(String[] args){
         Set<String> fruits=new HashSet<>();
+        fruits.add("Mango");
+        fruits.add("Apple");
+        System.out.println(fruits);
+        fruits.add("Orange");
+        System.out.println(fruits);
+        System.out.println(fruits.size());
+        fruits.remove("Orange");
+        System.out.println(fruits);
+        System.out.println(fruits.contains("Apple"));
+        System.out.println(fruits.contains("Orange"));
+    }
+}
+
+// Output:
+// [Apple, Mango]
+// [Apple, Mango, Orange]
+// 3
+// [Apple, Mango]
+// true
+// false
+
+
+// TreeSet - in this the values will be sorted and it will be ian an order
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Set<String> fruits=new TreeSet<>();
         fruits.add("Mango");
         fruits.add("Apple");
         System.out.println(fruits);
