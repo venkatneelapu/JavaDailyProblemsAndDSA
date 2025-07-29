@@ -1,9 +1,9 @@
 // in java we can play with the lists by using these inbuilt methods
-// add()-to add an element in a list at last.
-// remove()-to remove any element by using indexing.
+// add(value)-to add an element in a list at last.
+// remove(index)-to remove any element by using indexing.
 // size()-we can find the size of an list.
-// set(index,element)-we can replace element at any index by using set.
-// get()-we can get any element from list to console.
+// set(index, value)-we can replace element at any index by using set.
+// get(index)-we can get any element from list to console.
 
 import java.util.*;
 class Main{
