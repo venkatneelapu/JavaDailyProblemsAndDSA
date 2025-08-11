@@ -33,7 +33,8 @@ class Main{
 }
 
 
-//Output:
+//Output 1:
+
 Two Sum
 Enter length of array
 3
@@ -41,4 +42,15 @@ Enter array elements
 1 2 3
 Enter target
 6
+Pair not found
+
+// Output 2:
+
+Two Sum
+Enter length of array
+4
+Enter array elements
+1 2 3 4
+Enter target
+9
 Pair not found
