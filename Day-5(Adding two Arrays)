@@ -32,3 +32,25 @@ class Main {
         
     }
 }
+
+
+//Output 1:
+
+Enter n1
+3
+Enter n2
+3
+If Both inputd are same proside to next
+Enter elements of l1
+1 2 3
+Enter elements of l2
+4 5 6
+[5, 7, 9]
+
+// Output 2:
+
+Enter n1
+5
+Enter n2
+6
+Both inputs are not same
