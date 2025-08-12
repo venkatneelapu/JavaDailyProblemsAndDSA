@@ -25,11 +25,9 @@ class Main{
     }
 }
 
-// Input: 
-Hii i am venkat
-
 // Output:
-Length: 15
-ToLowerCase: hii i am venkat
+Enter the SENTENCE or a WORD: Hii..! I am venkat
+Length: 18
+ToLowerCase: hii..! i am venkat
 No of VOWELS in the sentense: 6
 No of CONSONANTS in the sentense: 6
