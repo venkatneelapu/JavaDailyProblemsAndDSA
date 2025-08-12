@@ -1,0 +1,25 @@
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Swapping numbers");
+        System.out.print("Enter a: ");
+        int a=sc.nextInt();
+        System.out.print("Enter b: ");
+        int b=sc.nextInt();
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("Numbers Swapped");
+        System.out.println("Value of a: "+a);
+        System.out.println("Value of b: "+b);
+    }
+}
+
+// Output:
+Swapping numbers
+Enter a: 10
+Enter b: 20
+Numbers Swapped
+Value of a: 20
+Value of b: 10
