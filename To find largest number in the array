@@ -1,3 +1,5 @@
+// CASE 1:( Using normal IF loop )
+
 import java.util.*;
 class Main{
     public static void main(String[] args){
@@ -11,6 +13,22 @@ class Main{
             if(arr[i]>largNum){
                largNum=arr[i]; 
             }
+        }
+        System.out.println(largNum);
+    }
+}
+// CASE 2:( Using Math.max() model )
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        int largNum=0;
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+            largNum=Math.max(arr[i],largNum);
         }
         System.out.println(largNum);
     }
