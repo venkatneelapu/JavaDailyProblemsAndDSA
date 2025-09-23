@@ -1,3 +1,5 @@
+// CASE 1: (Using normal IF condition )
+
 import java.util.*;
 class Main{
     public static void main(String[] args){
@@ -20,6 +22,29 @@ class Main{
         
     }
 }
+
+// CASE 2:(Using Math.min() )
+
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter length of array: ");
+        int n = sc.nextInt();
+        int arr[]=new int[n];
+        System.out.print("Enter Array element: ");
+        int small=0;
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+            small=arr[0];
+            small=Math.min(arr[i],small);
+        }
+       System.out.println("Smallest number in the array is: "+small);
+        
+    }
+}
+
 
 // Output: 
 Enter length of array: 5
