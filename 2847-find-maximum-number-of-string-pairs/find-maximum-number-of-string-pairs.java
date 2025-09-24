@@ -12,7 +12,7 @@ class Solution {
         for(int i=0;i<n-1;i++){
             String a=words[i];
             if(a.equals("0")){
-                    break;
+                    continue;
                 }
             for(int j=i+1;j<n;j++){
                 String b=words[j];
