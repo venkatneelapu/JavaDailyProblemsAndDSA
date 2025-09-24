@@ -9,7 +9,7 @@ class Solution {
     public int maximumNumberOfStringPairs(String[] words) {
         int count =0;
         int n=words.length;
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n-1;i++){
             String a=words[i];
             if(a.equals("0")){
                     break;
