@@ -13,7 +13,7 @@ class Solution {
             for(int j=i+1;j<n;j++){
                 String a=words[i];
                 String b=words[j];
-                if(b.equals("0")){
+                if(a.equals("0")){
                     break;
                 }
                 String reversing=new StringBuilder(b).reverse().toString();
