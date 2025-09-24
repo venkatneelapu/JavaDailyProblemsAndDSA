@@ -17,6 +17,7 @@ class Solution {
                 // String reversing=reverse(b);
                 if(reversing.equals(a)){
                     count++;
+                    break;
                 }
             }
         }
