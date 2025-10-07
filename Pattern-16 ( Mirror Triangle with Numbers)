@@ -4,7 +4,7 @@ class Main {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         for(int i=0;i<n;i++){
-            for(int j=0;j<n-i-1;j++){
+            for(int j=0;j<n-i-1;j++){ // we can use j<2*(n-i-1) while printing with single space
                 System.out.print("  ");
             }
             for(int k=i+1;k>=1;k--){
