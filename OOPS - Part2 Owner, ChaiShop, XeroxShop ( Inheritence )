@@ -1,0 +1,55 @@
+class Owner{
+    String ownerName="Venkat";
+    int age=21;
+    int num=123;
+    
+    public void boom(){
+        System.out.println("Boommm");
+    }
+}
+
+class ChaiShop{
+    String branchName;
+    int cupsSold;
+    int pricePerCup;
+    
+    public ChaiShop(String branchName, int cupsSold, int pricePerCup){
+        this.branchName=branchName;
+        this.cupsSold=cupsSold;
+        this.pricePerCup=pricePerCup;
+    }
+    public void display(){
+        System.out.println(branchName);
+        System.out.println(cupsSold);
+        System.out.println(pricePerCup);
+    }
+}
+class XeroxShop extends Owner {
+    String branchName;
+    int papersSold;
+    int pricePerPaper;
+    public XeroxShop(String branchName, int papersSold, int pricePerPaper){
+        this.branchName=branchName;
+        this.papersSold=papersSold;
+        this.pricePerPaper=pricePerPaper;
+    }
+    
+    public void display(){
+        System.out.println(branchName);
+        System.out.println(papersSold);
+        System.out.println(pricePerPaper);
+    }
+}
+
+
+class Main {
+    public static void main(String[] args) {
+        ChaiShop branch1=new ChaiShop("Adda",5,7);
+        branch1.display();
+        System.out.println(branch1.ownerName);
+        
+        XeroxShop Xbranch1=new XeroxShop("Boom",8,9);
+        Xbranch1.display();
+        
+    }
+}
