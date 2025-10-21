@@ -1,0 +1,47 @@
+// Method OverLoading : In a class we use same method name but it should be different in no of parameters, type of parameters, Order of parameters.
+
+class ChaiShop{
+    String branchName;
+    int cupsSold;
+    int pricePerCup;
+    
+    public ChaiShop(String branchName, int cupsSold, int pricePerCup){
+        this.branchName=branchName;
+        this.cupsSold=cupsSold;
+        this.pricePerCup=pricePerCup;
+    }
+    public void display(){
+        System.out.println(branchName);
+        System.out.println(cupsSold);
+        System.out.println(pricePerCup);
+    }
+    
+    public void fun(){ // fun()
+        System.out.println(1);
+    }
+    public void fun(int a){ // fun(1)
+        System.out.println(2);
+    }
+    public void fun(int a, int b){ // fun(1,2)
+        System.out.println(3);
+    }
+    public void fun(int a, String b){ // fun(1,"venkat")
+        System.out.println(4);
+    }
+    public void fun(String a, int b){ // fun("venkat",2)
+        System.out.println(5);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        ChaiShop branch1=new ChaiShop("Adda",5,7);
+        branch1.fun();
+        branch1.fun(1);
+        branch1.fun(1,2);
+        branch1.fun(1, "venkat");
+        branch1.fun("venakt", 2);
+        
+        
+    }
+}
