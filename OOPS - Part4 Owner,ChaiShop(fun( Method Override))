@@ -1,0 +1,43 @@
+// Method Override : If we have same method name in both parent class and child class then the child class will override the parent class and executes the child class method.
+// @Override : It if used in child class for 
+
+class Owner{
+    String ownerName="Venkat";
+    int age=21;
+    int num=123;
+    
+    public void boom(){
+        System.out.println("Boommm");
+    }
+    public void fun(){
+        System.out.println(1);
+    }
+}
+class ChaiShop extends Owner{
+    String branchName;
+    int cupsSold;
+    int pricePerCup;
+    
+    public ChaiShop(String branchName, int cupsSold, int pricePerCup){
+        this.branchName=branchName;
+        this.cupsSold=cupsSold;
+        this.pricePerCup=pricePerCup;
+    }
+    public void display(){
+        System.out.println(branchName);
+        System.out.println(cupsSold);
+        System.out.println(pricePerCup);
+    }
+    @Override
+    public void fun(){
+        System.out.println(1);
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        ChaiShop branch1=new ChaiShop("Adda",5,7);
+        branch1.fun();
+        
+    }
+}
