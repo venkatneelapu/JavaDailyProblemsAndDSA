@@ -1,4 +1,6 @@
-class Owner{
+// hierarchical inheritance : If the Parent class having hore then one child it is called as hierarichical inheritance.
+
+class Owner{                                      // Parent class
     String ownerName="Venkat";
     int age=21;
     int num=123;
@@ -8,7 +10,7 @@ class Owner{
     }
 }
 
-class ChaiShop{
+class ChaiShop extends Owner{                    // Child class : In Child class we use extends keyword to get data from Parent class it is called Inheritance.
     String branchName;
     int cupsSold;
     int pricePerCup;
@@ -24,7 +26,7 @@ class ChaiShop{
         System.out.println(pricePerCup);
     }
 }
-class XeroxShop extends Owner {
+class XeroxShop extends Owner {                  // Child class
     String branchName;
     int papersSold;
     int pricePerPaper;
