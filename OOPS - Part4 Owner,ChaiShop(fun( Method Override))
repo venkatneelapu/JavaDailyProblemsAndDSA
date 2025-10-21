@@ -1,5 +1,5 @@
 // Method Override : If we have same method name in both parent class and child class then the child class will override the parent class and executes the child class method.
-// @Override : It if used in child class for 
+// @Override : It is used in child class for developer 
 
 class Owner{
     String ownerName="Venkat";
