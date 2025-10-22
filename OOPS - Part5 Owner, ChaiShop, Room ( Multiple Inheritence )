@@ -1,0 +1,34 @@
+// Multiple Inheritance : If one class is inheriting a class and that class is inherited by another class is called multiple inheritance.
+
+class Owner{
+    String ownerName="venkat";
+    int age=21;
+    int num=123;
+    
+    public void boom(){
+        System.out.println("Boommm");
+    }
+    
+}
+class ChaiShop extends Owner{
+    String branchName="adda";
+    int cupsSold =5;
+    int pricePerCup=7;
+    
+}
+class Room extends ChaiShop{
+    int roomNumber=103;
+    int noOfChairs=10;
+    
+}
+
+class Main {
+    public static void main(String[] args) {
+      
+        Room r1=new Room();
+        System.out.println(r1.ownerName);
+        System.out.println(r1.branchName);
+        System.out.println(r1.roomNumber);
+  
+    }
+}
