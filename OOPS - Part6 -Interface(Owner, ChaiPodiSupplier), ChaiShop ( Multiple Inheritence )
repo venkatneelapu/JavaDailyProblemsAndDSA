@@ -1,3 +1,17 @@
+// Interface
+
+// So we have something called Interface
+
+// A single class can inherit multiple interfaces.
+
+// Class implements interface1, interface2.
+
+// All variables should be initialized in Interface.
+
+// Method should not have body.
+
+// Every Method should be overrided in its child class.
+
 interface Owner{
     String ownerName="venkat";
     int age=21;
