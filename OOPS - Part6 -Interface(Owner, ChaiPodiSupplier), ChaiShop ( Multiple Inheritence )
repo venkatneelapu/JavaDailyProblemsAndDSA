@@ -1,0 +1,22 @@
+interface Owner{
+    String ownerName="venkat";
+    int age=21;
+    int num=123;
+    
+}
+interface ChaiPodiSupplier{
+    String sipplierName="Rambabu";
+}
+class ChaiShop implements Owner,ChaiPodiSupplier {
+    String branchName;
+    int cupsSold;
+    int pricePerCup;
+    
+}
+class Main {
+    public static void main(String[] args) {
+        ChaiShop branch1=new ChaiShop();
+        System.out.println(branch1.ownerName);
+        System.out.println(branch1.sipplierName);
+    }
+}
