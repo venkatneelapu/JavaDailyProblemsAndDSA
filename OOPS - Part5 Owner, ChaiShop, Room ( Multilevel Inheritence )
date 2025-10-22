@@ -1,4 +1,4 @@
-// Multilevel Inheritance : If one class is inheriting a class and that class is inherited by another class is called multiple inheritance.
+// Multilevel Inheritance : If one class is inheriting a class and that class is inherited by another class is called multilevel inheritance.
 
 class Owner{
     String ownerName="venkat";
