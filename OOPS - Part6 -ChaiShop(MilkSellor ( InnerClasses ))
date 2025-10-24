@@ -1,0 +1,35 @@
+class ChaiShop {
+    String branchName;
+    int cupsSold;
+    int pricePerCup;
+    public ChaiShop(String branchName, int cupsSold, int pricePerCup){
+        this.branchName=branchName;
+        this.cupsSold=cupsSold;
+        this.pricePerCup=pricePerCup;
+    }
+    public void display(){
+        System.out.println(branchName);
+        System.out.println(cupsSold);
+        System.out.println(pricePerCup);
+    }
+    class MilkSellor {
+        String nameofMilkSellor;
+        int milkSoldInLiters;
+        public MilkSellor(String nameofMilkSellor,int milkSoldInLiters){
+            this.nameofMilkSellor=nameofMilkSellor;
+            this.milkSoldInLiters=milkSoldInLiters;
+        }
+        public void display(){
+             System.out.println(nameofMilkSellor+","+milkSoldInLiters);
+        }
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        ChaiShop branch1=new ChaiShop("Adda",5,7);
+        branch1.display();
+        ChaiShop.MilkSellor milk=branch1.new MilkSellor("Rambabu",50);
+        milk.display();
+    }
+}
