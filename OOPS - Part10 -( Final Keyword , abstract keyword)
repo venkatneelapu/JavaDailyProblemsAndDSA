@@ -1,0 +1,16 @@
+// Final : 
+// final keyword makes a variable constant.
+// You cannot change it.
+// You should always initialize final variables or we should at least initialized in constructor.
+// Final method cant be overrided
+// Final cant be extended or inherited.
+
+
+
+// abstract
+// If a class is abstract class we cannot directly create its object.
+// It should be extended by other class.
+// Abstract class can contain both abstract methods and normal methods.
+// Abstract methods are method without implementation (only declaration).
+// These should be overrided by subclass.
+// Abstract methods can only be created inside
