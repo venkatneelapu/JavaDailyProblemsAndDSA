@@ -1,0 +1,45 @@
+class Parent {
+    int k=1;
+    int m=1;
+    public void fun(){
+        System.out.println(1);
+    }
+}
+class Child extends Parent{
+    int k=2;
+    int m=2;
+    public void fun(){
+        System.out.println(2);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        Parent pp=new Parent();
+        System.out.println(pp.k);
+        System.out.println(pp.m);
+        pp.fun();
+        Child cc=new Child();
+        System.out.println(cc.k);
+        System.out.println(cc.m);
+        cc.fun();
+
+// in this type of object creation in inheritence
+// left => from left class it will take variables and static methods.
+// Right => from right calss it will take only methods if both the classes having same methods.
+// Static methods cant be overrided.
+        Parent pc=new Child();
+        System.out.println(pc.k);
+        System.out.println(pc.m);
+        pc.fun();
+    }
+}
+// Output : 
+1
+1
+1
+2
+2
+2
+1
+1
+2
