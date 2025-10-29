@@ -1,0 +1,57 @@
+// Static variable's : It belongs to class no need to create a object to access an element which is static and we can directly access and element by using class name.and it will be initilized only once
+// we cant Inheritance the static classes.
+class ChaiShop{
+    static int a=0;
+    int b=0;
+}
+class Main {
+    public static void main(String[] args) {
+        ChaiShop aa=new ChaiShop();
+        ChaiShop bb=new ChaiShop();
+        ChaiShop.a++;
+        ChaiShop.a++;
+        aa.b++;
+        bb.b++;
+        System.out.println(ChaiShop.a+" "+aa.b);
+        System.out.println(ChaiShop.a+" "+bb.b);
+    }
+}
+
+// Output: 
+2 1 
+2 1
+
+// Static Methods : methods can be accessed directly by using class name without creating objects.
+// and we cant access the variables in class it can access only static variables in class because it belongs to calss and it will initillize when class is initillised.
+
+
+class ChaiShop{
+    static int a=3;
+    static void fun(){
+        System.out.println(a);
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        ChaiShop.fun();
+    }
+}
+
+// Output : 3
+
+// and we can use static for inner classes also. and we and use it like  ( MainClass.InnerClass.Method(); ).
+
+class ChaiShop{
+    static class Make{
+        static int a=3;
+        static void fun(){
+            System.out.println(a);
+        }
+    }
+}
+class Main {
+    public static void main(String[] args) {
+        ChaiShop.Make.fun();
+    }
+}
+// Output : 3
