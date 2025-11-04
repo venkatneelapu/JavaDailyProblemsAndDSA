@@ -1,0 +1,22 @@
+import java.text.DecimalFormat;
+class Main {
+    public static void main(String[] args) {
+        double value = 123.45678;
+
+        // Using printf for direct output
+        System.out.printf("%.2f%n",value);
+        
+        // Using String.format to get a formatted String
+        String dec=String.format("%.2f",value);
+        System.out.println(dec);
+        
+        double deci=Math.round(value*100.0)/100.0;
+        System.out.println(deci);
+
+        DecimalFormat d=new DecimalFormat("0.000");
+        String formatval=d.format(value);
+        System.out.println(formatval);
+        
+        
+    }
+}
