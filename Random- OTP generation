@@ -1,0 +1,12 @@
+import java.util.Random;
+class main {
+    public static void main(String[] args){
+        Random rand=new Random();
+        String OTP="";
+        for(int i=1;i<=4;i++){
+            int dig=rand.nextInt(10);
+            OTP+=dig;
+        }
+        System.out.println("OTP: "+OTP);
+    }
+}
